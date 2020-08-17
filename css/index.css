@@ -1,0 +1,236 @@
+/* color palette
+color no1 #68b0ab
+color no2 #8fc0a9
+color no3 #c8d5b9
+color no4 #faf3dd
+*/
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    /* background-color: ; */
+}
+
+.nav-bar {
+    width: 97%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-name-container {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-my-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.nav-links {
+    width: 40%;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.links-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container>li {
+    list-style: none;
+}
+
+.links-container>li>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+
+/* timeline section styles  */
+
+#timeline {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url("/images/timeline2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profil-container {
+    width: 40%;
+    color: aliceblue;
+    position: relative;
+    top: 45px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil-image-container {
+    width: 200px;
+    height: 200px;
+}
+
+.my-profil-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.profil-name-title {
+    text-align:left;
+    color: red;
+}
+
+
+
+/* about-me section styles  */
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+#about-me {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-title {
+    width: 15%;
+    height: 100%;
+    text-align: right;
+    padding: 10px;
+
+}
+
+.section-content {
+    width: 84%;
+    height: fit-content;
+    padding: 10px;
+    text-align: left;
+    border-left: 3px solid red;
+}
+
+/* work section styles  */
+
+#works {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project1 {
+    grid-area: item1;
+    background-image: url("/images/project1.jpeg");
+}
+
+.project2 {
+    grid-area: item2;
+    background-image: url("/images/project2.jpeg");
+}
+
+.project3 {
+    grid-area: item3;
+    background-image: url("/images/project3.jpeg");
+}
+
+.project4 {
+    grid-area: item4;
+    background-image: url("/images/project4.jpeg");
+}
+
+.project5 {
+    grid-area: item5;
+    background-image: url("/images/project5.jpeg");
+}
+
+.project6 {
+    grid-area: item6;
+    background-image: url("/images/project6.jpeg");
+}
+
+.work-section-container {
+    width: 84%;
+    height: 450px;
+    border-left: 3px solid red;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "item1 item1 item2"
+                         "item1 item1 item3"
+                         "item4 item5 item6";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.work-title {
+    color: burlywood;
+    text-align: end;
+    background-color: #fff;
+}
+/* contact me section styles  */
+
+#contact-me {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-section-container {
+    width: 84%;
+    height: 70px;
+    border-left: 3px solid red;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+}
+
+.contact-section-container>ul {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-section-container>ul>li {
+    list-style: none;
+}
